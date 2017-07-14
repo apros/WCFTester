@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetScCustomers xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <claimId i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+   <customerId>3607641</customerId>
+</GetScCustomers>

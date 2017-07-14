@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetPlanCovgs xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <planId>CELSA</planId>
+   <producerId>QC001852</producerId>
+</GetPlanCovgs>

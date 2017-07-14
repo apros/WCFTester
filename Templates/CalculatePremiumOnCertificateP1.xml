@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CalculatePremiumOnCertificateP xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <certP xmlns:a="urn:IA.IAFG.UN.Contracts.Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <IgnoreWarnings xmlns="urn:IA.IAFG.UN.Contracts.Entities.Base">false</IgnoreWarnings>
+      <RowVersion i:nil="true" xmlns="urn:IA.IAFG.UN.Contracts.Entities.Base"/>
+      <a:CertStatusPri>0</a:CertStatusPri>
+      <a:CertStatusPriDesc i:nil="true"/>
+      <a:CertStatusSec>0</a:CertStatusSec>
+      <a:CertStatusSecDesc i:nil="true"/>
+      <a:CertificateId i:nil="true"/>
+      <a:CertificateKey>0</a:CertificateKey>
+      <a:CoDebtor1FirstName i:nil="true"/>
+      <a:CoDebtor1LastName i:nil="true"/>
+      <a:CoDebtor1MiddleName i:nil="true"/>
+      <a:CoDebtor2FirstName i:nil="true"/>
+      <a:CoDebtor2LastName i:nil="true"/>
+      <a:CoDebtor2MiddleName i:nil="true"/>
+      <a:DebtorFirstName i:nil="true"/>
+      <a:DebtorLastName i:nil="true"/>
+      <a:DebtorMiddleName i:nil="true"/>
+      <a:DebtorName i:nil="true"/>
+      <a:EffectDt i:nil="true"/>
+      <a:FormDesc i:nil="true"/>
+      <a:FormRevisionKey>0</a:FormRevisionKey>
+      <a:LocationType>0</a:LocationType>
+      <a:Number i:nil="true"/>
+      <a:Office i:nil="true"/>
+      <a:OtherLocation i:nil="true"/>
+      <a:PlanId i:nil="true"/>
+      <a:PlanIdDesc i:nil="true"/>
+      <a:Prefix i:nil="true"/>
+      <a:ProducerClientKey i:nil="true"/>
+      <a:ProducerId i:nil="true"/>
+      <a:RemittanceKey i:nil="true"/>
+      <a:Suffix/>
+      <a:AmortizationPeriod i:nil="true"/>
+      <a:CertLayout>0</a:CertLayout>
+      <a:CertSource i:nil="true"/>
+      <a:CertStatusManager>
+         <a:CommentsToSave/>
+         <a:_suggestedPrimaryStatus i:nil="true"/>
+         <a:_suggestedSecondaryStatus i:nil="true"/>
+         <a:_targetPrimaryStatus i:nil="true"/>
+         <a:_targetSecondaryStatus i:nil="true"/>
+      </a:CertStatusManager>
+      <a:CertificateIdOfDataTransferredFrom i:nil="true"/>
+      <a:CertificateKeyOfDataTransferredFrom>0</a:CertificateKeyOfDataTransferredFrom>
+      <a:CompanyName i:nil="true"/>
+      <a:CoverageList/>
+      <a:DealType i:nil="true"/>
+      <a:EffectDt i:nil="true"/>
+      <a:FormId i:nil="true"/>
+      <a:FormKey>0</a:FormKey>
+      <a:ImportStatus i:nil="true"/>
+      <a:InsuredList/>
+      <a:InterestRate i:nil="true"/>
+      <a:IsTaxExempted>false</a:IsTaxExempted>
+      <a:IsVoidable>true</a:IsVoidable>
+      <a:LoanFIBranchClientKey i:nil="true"/>
+      <a:LoanFIClientKey i:nil="true"/>
+      <a:LoanFinancedAmnt i:nil="true"/>
+      <a:LoanId i:nil="true"/>
+      <a:LoanPmntAmnt i:nil="true"/>
+      <a:LoanPmntAmntWoIns i:nil="true"/>
+      <a:LoanPmntFreq i:nil="true"/>
+      <a:LoanPmntFreqWoIns i:nil="true"/>
+      <a:LoanTerm i:nil="true"/>
+      <a:MissingFinanceContract>false</a:MissingFinanceContract>
+      <a:MissingSignature>false</a:MissingSignature>
+      <a:MonthlyLoanPmntAmnt i:nil="true"/>
+      <a:MonthlyLoanPmntAmntWoIns i:nil="true"/>
+      <a:NewFIBranch i:nil="true"/>
+      <a:OdoKms i:nil="true"/>
+      <a:PlanId i:nil="true"/>
+      <a:PremiumFI i:nil="true"/>
+      <a:PremiumToleranceAmnt>0</a:PremiumToleranceAmnt>
+      <a:PremiumTolerancePcnt>0</a:PremiumTolerancePcnt>
+      <a:ProducerDBAName i:nil="true"/>
+      <a:ProducerProvState i:nil="true"/>
+      <a:ProducerStatusDesc i:nil="true"/>
+      <a:PurchasePrice i:nil="true"/>
+      <a:RemittanceId i:nil="true"/>
+      <a:ResidualValue i:nil="true"/>
+      <a:Revision i:nil="true"/>
+      <a:SalesPeriodKey i:nil="true"/>
+      <a:TaxProvState i:nil="true"/>
+      <a:UseCalculatedAmnts i:nil="true"/>
+      <a:VIN i:nil="true"/>
+      <a:VehicleCondition i:nil="true"/>
+   </certP>
+</CalculatePremiumOnCertificateP>

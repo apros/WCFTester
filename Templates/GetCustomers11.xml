@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetCustomers xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <params xmlns:a="urn:IA.IAFG.UN.Contracts.Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <a:CriteriaItems i:nil="true"/>
+      <a:PageSize>0</a:PageSize>
+      <a:Parameters xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+         <b:KeyValueOfstringstring>
+            <b:Key>LastName</b:Key>
+            <b:Value>Sa</b:Value>
+         </b:KeyValueOfstringstring>
+         <b:KeyValueOfstringstring>
+            <b:Key>FirstName</b:Key>
+            <b:Value>Jo</b:Value>
+         </b:KeyValueOfstringstring>
+      </a:Parameters>
+      <a:SortOrder/>
+      <a:StartRow>0</a:StartRow>
+   </params>
+   <pageSize>11</pageSize>
+   <pageNumber>1</pageNumber>
+</GetCustomers>

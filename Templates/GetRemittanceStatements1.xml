@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetRemittanceStatements xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <statementId>0</statementId>
+   <certKeys>5915904</certKeys>
+   <delimeter>,</delimeter>
+   <sortExpression>CertificateId</sortExpression>
+   <sortDirection>asc</sortDirection>
+</GetRemittanceStatements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetDPR8000Data xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <statementId i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+   <userId>SLIC\OXP</userId>
+   <lang>E</lang>
+</GetDPR8000Data>

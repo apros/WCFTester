@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetCompRcds xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <rcdType>CURRENT</rcdType>
+</GetCompRcds>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CalculatePremiumOnQuoteCr xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <quote xmlns:a="urn:IA.IAFG.UN.Contracts.Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <IgnoreWarnings xmlns="urn:IA.IAFG.UN.Contracts.Entities.Base">false</IgnoreWarnings>
+      <RowVersion i:nil="true" xmlns="urn:IA.IAFG.UN.Contracts.Entities.Base"/>
+      <a:AmortizationPeriod>60</a:AmortizationPeriod>
+      <a:CapitalCost>20000.0</a:CapitalCost>
+      <a:CertSource>16</a:CertSource>
+      <a:CertificateId i:nil="true"/>
+      <a:CertificateKey i:nil="true"/>
+      <a:CoDebtor i:nil="true"/>
+      <a:CoverageList>
+         <a:QuoteCovgCr>
+            <IgnoreWarnings xmlns="urn:IA.IAFG.UN.Contracts.Entities.Base">false</IgnoreWarnings>
+            <RowVersion i:nil="true" xmlns="urn:IA.IAFG.UN.Contracts.Entities.Base"/>
+            <a:AppliesTo>DO</a:AppliesTo>
+            <a:CoverageType>3</a:CoverageType>
+            <a:ExpiryDt>0001-01-01T00:00:00</a:ExpiryDt>
+            <a:InsuredAmnt>0</a:InsuredAmnt>
+            <a:IsResidual>false</a:IsResidual>
+            <a:OptionKey>29</a:OptionKey>
+            <a:PolicyFeeAmnt>0</a:PolicyFeeAmnt>
+            <a:PremiumAmnt>0</a:PremiumAmnt>
+            <a:QuoteCovgKey>0</a:QuoteCovgKey>
+            <a:QuoteKey>0</a:QuoteKey>
+            <a:TaxAmnt>0</a:TaxAmnt>
+            <a:Term>60</a:Term>
+         </a:QuoteCovgCr>
+      </a:CoverageList>
+      <a:DBAName i:nil="true"/>
+      <a:DealType>2</a:DealType>
+      <a:Debtor>
+         <IgnoreWarnings xmlns="urn:IA.IAFG.UN.Contracts.Entities.Base">false</IgnoreWarnings>
+         <RowVersion i:nil="true" xmlns="urn:IA.IAFG.UN.Contracts.Entities.Base"/>
+         <a:AboriginalCardNum i:nil="true"/>
+         <a:Birthdate>1977-01-01T00:00:00</a:Birthdate>
+         <a:CertificateKey>0</a:CertificateKey>
+         <a:City i:nil="true"/>
+         <a:Civic i:nil="true"/>
+         <a:Contact i:nil="true"/>
+         <a:ContactCount i:nil="true"/>
+         <a:CustomerClientKey i:nil="true"/>
+         <a:CustomerKey>0</a:CustomerKey>
+         <a:FirstName>a</a:FirstName>
+         <a:FullAddress i:nil="true"/>
+         <a:Gender>0</a:Gender>
+         <a:InsuredType>0</a:InsuredType>
+         <a:Language i:nil="true"/>
+         <a:LastName>a</a:LastName>
+         <a:MiddleName i:nil="true"/>
+         <a:PhoneNumber/>
+         <a:PostalZip i:nil="true"/>
+         <a:ProvState>BC</a:ProvState>
+         <a:Salutation i:nil="true"/>
+         <a:SeqNum>0</a:SeqNum>
+         <a:Street i:nil="true"/>
+         <a:Suite i:nil="true"/>
+      </a:Debtor>
+      <a:EffectDt>2016-09-01T00:00:00-07:00</a:EffectDt>
+      <a:FIClientKey>0</a:FIClientKey>
+      <a:FinancedAmntWithResidual>0</a:FinancedAmntWithResidual>
+      <a:InitMonthlyPmntWTax>0</a:InitMonthlyPmntWTax>
+      <a:InitResidualValWTax>0</a:InitResidualValWTax>
+      <a:InterestRate>0.05</a:InterestRate>
+      <a:IsAboriginal>false</a:IsAboriginal>
+      <a:IssuedBy>BQH</a:IssuedBy>
+      <a:IssuedDt>0001-01-01T00:00:00</a:IssuedDt>
+      <a:Language>0</a:Language>
+      <a:LoanFinancedAmnt>0</a:LoanFinancedAmnt>
+      <a:LoanId i:nil="true"/>
+      <a:LoanPmntFreq>4</a:LoanPmntFreq>
+      <a:LoanTerm>60</a:LoanTerm>
+      <a:MonthlyLoanPmntAmnt>0</a:MonthlyLoanPmntAmnt>
+      <a:MonthlyLoanPmntAmntWoIns>0</a:MonthlyLoanPmntAmntWoIns>
+      <a:PlanId>CWE</a:PlanId>
+      <a:PremiumFIType>1</a:PremiumFIType>
+      <a:ProducerClientKey>0</a:ProducerClientKey>
+      <a:ProducerId>NS000070</a:ProducerId>
+      <a:ProducerProvState i:nil="true"/>
+      <a:Promo>0</a:Promo>
+      <a:PromoUnit>M</a:PromoUnit>
+      <a:QuoteKey>0</a:QuoteKey>
+      <a:ResidualValue>0</a:ResidualValue>
+      <a:SkipPmnt>false</a:SkipPmnt>
+      <a:StockNum i:nil="true"/>
+      <a:SumOfMonthlyPmnts>0</a:SumOfMonthlyPmnts>
+      <a:TotalPremiumAmnt>0.0</a:TotalPremiumAmnt>
+      <a:VehiclePrice i:nil="true"/>
+   </quote>
+</CalculatePremiumOnQuoteCr>

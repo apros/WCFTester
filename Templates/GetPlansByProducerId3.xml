@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetPlansByProducerId xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <producerId>QC001980</producerId>
+   <onDate>2016-05-19T00:00:00-07:00</onDate>
+</GetPlansByProducerId>

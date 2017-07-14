@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2397D137-30C4-4AD7-89E1-34B4D3D34FC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UNWcfTester</RootNamespace>
+    <AssemblyName>UNWcfTester</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>UNWcfTester.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.2.0.37226, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BL\Launcher\JsonLuncherDecorator.cs" />
+    <Compile Include="BL\Launcher\Launcher.cs" />
+    <Compile Include="BL\Launcher\LauncherDecorator.cs" />
+    <Compile Include="BL\Launcher\MethodLuncher.cs" />
+    <Compile Include="ClientSessionBehavior.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Service References\ServiceExternal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Endpoint.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="BL\Launcher\OutputLogger.cs" />
+    <Compile Include="ViewModel\ParamCtrlItemModel.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.AppUserAccess.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.CertificateP.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.Code.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.CodeTable.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExCertificate.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExCertificateRates.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExCertNumber.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExCompRcds.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExCustomer.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExCustomerCertificates.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExDPR8000ReportItem.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExDpr8000ReportItem1.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExDPR930.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExDPR931.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExFI.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExFormData.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExGCR8000Report.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExLinkedQuote.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExPlan.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExPlanCovg.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExProvState.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExQuoteCrSearchResult.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExRemittanceStatement.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExSalesDailyImport.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExSalesPerformanceAnalysis.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ExSalesRcds.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ScCertCovgSearch.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ScCertificate.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ScCustomer.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.External.ScPlanCovg.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.PropertyOption.datasource" />
+    <None Include="Properties\DataSources\IA.IAFG.UN.Contracts.Entities.QuoteCr.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Service References\ServiceExternal\ServiceExternal.wsdl" />
+    <None Include="Service References\ServiceExternal\ServiceExternal.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceExternal\ServiceExternal1.wsdl" />
+    <None Include="Service References\ServiceExternal\ServiceExternal1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceExternal\ServiceExternal2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceExternal\ServiceExternal3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceExternal\ServiceExternal4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceExternal\ServiceExternal5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceExternal\ServiceExternal6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceExternal\ServiceExternal7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceExternal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceExternal\ServiceExternal.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceExternal\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceExternal\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceExternal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clients\Common\src\IA.IAFG.UN.Common.vbproj">
+      <Project>{afe2b0d8-09a4-43ae-aa0c-80da6cfb7a8d}</Project>
+      <Name>IA.IAFG.UN.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Clients\IAP.Common\src\IA.IAFG.IAP.Common.vbproj">
+      <Project>{12ad5b9b-5007-4335-9048-5371079bd5d8}</Project>
+      <Name>IA.IAFG.IAP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Contracts\Entities\src\IA.IAFG.UN.Contracts.Entities.vbproj">
+      <Project>{b9a214c5-c506-4430-9bdc-6389c47ffad1}</Project>
+      <Name>IA.IAFG.UN.Contracts.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomers1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomers2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomers3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomers11.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCodes1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\CalculatePremiumOnCertificateP1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\CalculatePremiumOnQuoteCr1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\DeleteQuoteCr1.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\DelLinkedQuotes1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\DelRemittanceStatement1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCertificateRates1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetFormData1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetPlanCovgs1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomerCertificates1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetTaxRateByProvince1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetSubPlans1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetTaxRateByProvince2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCompRcds1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCertificates1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCertificates2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomers4.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\InsRemittanceStatement1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetRemittanceStatements1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\DelRemittanceStatement2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetScCertCovgs1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetLinkedQuotes1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetPlanCovgs2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetSubPlans2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\InsRemittanceStatement2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetDPR930Data1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\InsRemittanceStatement3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetPlanCovgs3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomers5.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomerCertificates2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetScCertCovgs2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetProvStates1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetTaxRateByProvince3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetPlansByProducerId1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetDPR8000Data1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetScCertificates1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomers6.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetPlansByProducerId2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetScPlanCovgs1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetFinInstitutions1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetSalesDailyImport1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\InsRemittanceStatement4.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetSalesRcds1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetPlansByProducerId3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetScCustomers1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCertificateRates2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\VoidCertificate1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\GetCustomers7.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Templates\SaveAsPendingCertificate1.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

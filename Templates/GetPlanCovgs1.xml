@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetPlanCovgs xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <planId>CX2501</planId>
+   <producerId>BC000084</producerId>
+</GetPlanCovgs>

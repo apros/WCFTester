@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GetFormData xmlns="urn:IA.IAFG.UN.Contracts.External">
+   <params xmlns:a="urn:IA.IAFG.UN.Contracts.Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <a:CriteriaItems i:nil="true"/>
+      <a:PageSize>0</a:PageSize>
+      <a:Parameters xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+         <b:KeyValueOfstringstring>
+            <b:Key>CertificateKey</b:Key>
+            <b:Value>10277603</b:Value>
+         </b:KeyValueOfstringstring>
+         <b:KeyValueOfstringstring>
+            <b:Key>CertificateId</b:Key>
+            <b:Value/>
+         </b:KeyValueOfstringstring>
+         <b:KeyValueOfstringstring>
+            <b:Key>ProductId</b:Key>
+            <b:Value/>
+         </b:KeyValueOfstringstring>
+         <b:KeyValueOfstringstring>
+            <b:Key>QuoteId</b:Key>
+            <b:Value/>
+         </b:KeyValueOfstringstring>
+         <b:KeyValueOfstringstring>
+            <b:Key>ImgGuid</b:Key>
+            <b:Value>3PHk8tmAbEeGebLC6sv2Vw==</b:Value>
+         </b:KeyValueOfstringstring>
+      </a:Parameters>
+      <a:SortOrder/>
+      <a:StartRow>0</a:StartRow>
+   </params>
+</GetFormData>
